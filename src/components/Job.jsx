@@ -16,7 +16,11 @@ const Job = ({ data }) => {
           <Button
             variant="white"
             onClick={() => {
-              dispatch({ type: "ADD_TO_FAVORITES", payload: data });
+              if (marked) {
+                dispatch({ type: "REMOVE_FROM_FAVORITES", payload: data._id });
+              } else {
+                dispatch({ type: "ADD_TO_FAVORITES", payload: data });
+              }
               setMarked(!marked);
             }}
           >
