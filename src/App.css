@@ -45,3 +45,7 @@
 .bi-star-fill {
   fill: goldenrod;
 }
+
+.bi-trash3:hover {
+  fill: #d83030;
+}
