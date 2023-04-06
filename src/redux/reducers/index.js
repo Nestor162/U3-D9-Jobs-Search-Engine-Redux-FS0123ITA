@@ -4,7 +4,7 @@ const initialState = {
 
 const favoriteReducer = (state = initialState, action) => {
   switch (action.type) {
-    case " ADD_TO_FAVORITES":
+    case "ADD_TO_FAVORITES":
       return {
         ...state,
         favorites: [...state.favorites, action.payload]
