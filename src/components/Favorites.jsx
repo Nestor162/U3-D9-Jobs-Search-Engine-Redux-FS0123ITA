@@ -10,9 +10,10 @@ const Favorites = () => {
       <h1>Aziende preferite</h1>
       <ListGroup>
         {favorites.map((favorite, i) => {
+          console.log(favorite);
           return (
             <ListGroup.Item key={favorite._id} className="d-flex justify-content-between">
-              <span>{favorite.title}</span>
+              <span>{favorite.company_name}</span>
               <span onClick={() => dispatch({ type: "REMOVE_FROM_FAVORITES", payload: i })}>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
