@@ -5,7 +5,7 @@ import { useDispatch } from "react-redux";
 const Job = ({ data }) => {
   const dispatch = useDispatch();
   return (
-    <Row className="mx-0 mt-3 p-3" style={{ border: "1px solid #00000033", borderRadius: 4 }}>
+    <Row className="mx-0 mt-3 p-3 d-flex align-items-center" style={{ border: "1px solid #00000033", borderRadius: 4 }}>
       <Col xs={3}>
         <span>
           <Link className="align-middle" to={`/${data.company_name}`}>
